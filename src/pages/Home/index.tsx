@@ -1,4 +1,6 @@
-import { FormEvent, useState } from "react";
+import { FormEvent, useContext, useEffect, useState } from "react";
+
+import { useNavigate } from "react-router-dom";
 
 import { 
   Flex, 
@@ -8,13 +10,19 @@ import {
   Button
 } from "@chakra-ui/react";
 
+import { NameContext } from "../../hooks/nameStore";
+
 export function Home(){
-  const [name, setName] = useState("");
+  let navigate = useNavigate();
+  const { state, dispatch } = useContext(NameContext);
+
+  const [name, setName] = useState(state.name);
 
   function handleSubmit(event: FormEvent){
     event.preventDefault();
 
-    console.log(name);
+    dispatch({ type: 'SET_NAME', payload: name });
+    navigate('/cards');
   }
 
   return (
@@ -33,6 +41,7 @@ export function Home(){
             id='name' 
             type='name' 
             placeholder='Digite seu nome' 
+            value={name}
             onChange={(event) => setName(event.target.value)}
           />
         </FormControl>
