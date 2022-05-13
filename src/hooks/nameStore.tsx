@@ -2,10 +2,10 @@ import React, { createContext, useEffect, useReducer } from "react";
 
 import { NameReducer, State } from './nameReducer';
 
-const storedName = localStorage.getItem("token");
+const storedName = sessionStorage.getItem("name");
 
 const initialState = {
-  name: JSON.parse(storedName ?? "")
+  name: storedName ?? ""
 };
 
 interface NameStoreProps {
@@ -16,12 +16,12 @@ export function NameStore({ children }: NameStoreProps) {
     const [state, dispatch] = useReducer(NameReducer, initialState);
 
     useEffect(() => {
-      sessionStorage.setItem("name", JSON.stringify(state.name));
+      sessionStorage.setItem("name", state.name);
     }, [state.name]);
 
     return (
       <NameContext.Provider value={{state, dispatch}}>
-          {children}
+        {children}
       </NameContext.Provider>
     )
 };
