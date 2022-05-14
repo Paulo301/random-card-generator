@@ -27,6 +27,7 @@ Tabela de conteúdos
 ## 💻 Sobre o projeto
 
 Random Card Generator permite a um usuário digitar seu nome e em seguida gerar 5 cartas aleatórias, além disso ele pode puxar até 3 novas cartas sem descartar as anteriores e embaralhar as cartas já puxadas. 
+
 As cartas tem seu design baseado nas cartas de monstros XYZ do jogo de cartas [Yu-Gi-Oh](https://www.yugioh-card.com/en/), o ataque (ATK), a defesa (DEF) e os níveis presentes nelas são gerados aleatoriamente enquanto o resto das informações são de cartas aleatórias do jogo de cartas [Magic: The Gathering](https://magic.wizards.com/pt-BR) dentre as 175 primeiras retornadas da pesquisa pelas que podem ser comandantes. 
 
 ---
