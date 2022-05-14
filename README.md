@@ -77,8 +77,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 -   **[React](https://reactjs.org/)**  
 -   **[TypeScript](https://www.typescriptlang.org/)**
-
 -   **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
+-   **[Chakra UI](https://chakra-ui.com/)**
 -   **[React Icons](https://react-icons.github.io/react-icons/)**
 -   **[Axios](https://github.com/axios/axios)**
 -   **[React Hook Form](https://react-hook-form.com/)**
