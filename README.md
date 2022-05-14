@@ -13,14 +13,13 @@
 Tabela de conteúdos
 =================
 <!--ts-->
-   * [Sobre o projeto](#💻-sobre-o-projeto)
-   * [Funcionalidades](#⚙️-funcionalidades)
+   * [Sobre o projeto](#user-content--sobre-o-projeto)
+   * [Funcionalidades](#user-content--funcionalidades)
    * [Como executar o projeto](#-como-executar-o-projeto)
      * [Pré-requisitos](#pré-requisitos)
-     * [Rodando a aplicação](#▶️-rodando-a-aplicação)
-   * [Tecnologias](#🛠-tecnologias)
-   * [Autor](#👤-autor)
-   * [Licença](#📝-licença)
+     * [Rodando a aplicação](#user-content--rodando-a-aplicação)
+   * [Tecnologias](#user-content--tecnologias)
+   * [Autor](#user-content--autor)
 <!--te-->
 
 
