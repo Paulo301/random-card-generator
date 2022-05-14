@@ -3,9 +3,10 @@ import api from './api';
 
 export const cardsApi = {
   getCards: async (): Promise<{ data: ICard[] }> => {
-    const { data } = await api.get("https://db.ygoprodeck.com/api/v7/cardinfo.php",{
+    const { data } = await api.get("https://api.scryfall.com/cards/search",{
       params: {
-        race: "wyrm"
+        format: "json",
+        q: "is:commander"
       }
     });
     return data;
