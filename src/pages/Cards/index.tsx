@@ -18,7 +18,7 @@ import { randomWithRange } from "../../utils/randomWithRange";
 import { shuffle } from "../../utils/shuffle";
 
 export function Cards(){
-  const { state, dispatch } = useContext(NameContext);
+  const { state } = useContext(NameContext);
 
   const [cards, setCards] = useState<ICard[]>([]);
   const [drawnCards, setDrawnCards] = useState<ICard[]>([]);
