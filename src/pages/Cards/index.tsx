@@ -53,6 +53,7 @@ export function Cards(){
     <Flex 
       flexDir='column' 
       px='16px'
+      pb='60px'
     >
       <Box
         as='header'
@@ -69,7 +70,7 @@ export function Cards(){
 
       <SimpleGrid 
         mt={4}
-        columns={[4]}
+        columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
         spacing='20px'
         justifyItems='center'
       >
@@ -84,10 +85,12 @@ export function Cards(){
       </SimpleGrid>
 
       <SimpleGrid 
-        mt={4}
-        columns={[2]} 
+        mb={4}
+        columns={2} 
         spacing='40px' 
         alignSelf='center'
+        position='fixed'
+        bottom={0}
       >
         <Button
           leftIcon={<GiCardPickup size='18px' />} 
